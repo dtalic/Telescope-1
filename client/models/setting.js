@@ -14,7 +14,7 @@ var Setting = FormModel.extend({
     logoUrl: '',
     logoHeight: '',
     logoWidth: '',
-    defaultEmail: '',
+    defaultEmail: 'info@dunia.mailgun.org',
     newPostsNotifications: true,
     backgroundColor: '',
     secondaryColor: '',
