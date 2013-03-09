@@ -1,13 +1,13 @@
 <template name="posts_digest">
     <div class="grid">
       <div class="grid-block">
-        The top 5 posts of each day. |
+        Top 5 Post untuk Hari Ini. |
       {{#if showPreviousDate}}
-      <a href="{{previousDateURL}}" class="prev-link">Previous Day</a> | 
+      <a href="{{previousDateURL}}" class="prev-link">Kemaren</a> | 
       {{/if}}
       {{currentDate}} |
       {{#if showNextDate}}
-      <a href="{{nextDateURL}}" class="next-link">Next Day</a>
+      <a href="{{nextDateURL}}" class="next-link">Besok</a>
       {{/if}}
       </div>
     </div>
@@ -17,7 +17,7 @@
           {{> post_item}}
         {{/each}}
       {{else}}
-        <p class="empty-notice">Sorry, nothing for today.</p>
+        <p class="empty-notice">Maaf, tidak ada post untuk hari ini.</p>
       {{/if}}
     </div>
 </template>
